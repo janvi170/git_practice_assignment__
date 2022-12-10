@@ -1,11 +1,10 @@
 function checkPrime(num){
-let counter = 0;
-for(let i=1;i<=num;i++){
+let factor=0;
+for(i=1;i<=num;i++){
 if(num%i==0){
-counter++;
+factor++;
 }
-}
-if(counter == 2){
+if(factor==2){
 return true;
 }
 return false;
